@@ -140,13 +140,13 @@ postlist.push(newContent)
 const workflow=async(postlist, newContent)=>{
 
 let allPosts = await getPosts(postlist)
-console.log(allPosts) //For showing each step
+console.log("For showing the first step",allPosts) //For showing each step
 sortPosts(allPosts)
-console.log(allPosts)//Checking if sorting the posts done correct
+console.log("Checking if sorting the posts done correct",allPosts)//Checking if sorting the posts done correct
 writePost(allPosts,newContent)
-console.log(allPosts)// Checking how the new post added
+console.log("Checking how the new post added",allPosts)// Checking how the new post added
 sortPosts(allPosts)
-console.log(allPosts) // Showing the final output
+console.log("Showing the final output",allPosts) // Showing the final output
 
 }
 
